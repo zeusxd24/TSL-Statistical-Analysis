@@ -1,17 +1,17 @@
-# ⚽ Turkish Super League Data Analytics & RDBMS Pipeline
+# Turkish Super League Data Analytics & RDBMS Pipeline
 
-⚠️ Disclaimer: This project is developed strictly for educational, research, and portfolio purposes. All data is fetched live from official public sources and is used under fair use principles. It is not intended for commercial use.
+Disclaimer: This project is developed strictly for educational, research, and portfolio purposes. All data is fetched live from official public sources and is used under fair use principles. It is not intended for commercial use.
 
 An end-to-end data analytics and engineering project that automatically scrapes Turkish Super League (TSL) data, designs a relational database structure using **Many-to-Many architecture**, and provides statistical insights.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Language:** Python
 * **Data Scraping (ETL):** BeautifulSoup, Requests
 * **Data Manipulation & Analytics:** Pandas, NumPy
 * **Database Management:** SQLite
 * **Data Visualization:** Seaborn, Matplotlib, AdjustText
 
-## 📊 Relational Database Modeling (3NF)
+## Relational Database Modeling (3NF)
 Instead of storing flat files, this project normalizes raw web data into **3rd Normal Form (3NF)** to ensure data integrity and avoid redundancy. 
 
 Since the relationship between Teams and Matches is inherently **Many-to-Many**, the schema utilizes a Junction Table (`match_teams`):
@@ -19,7 +19,7 @@ Since the relationship between Teams and Matches is inherently **Many-to-Many**,
 * `matches`: Stores league weeks and match details.
 * `match_teams` (Junction Table): Connects teams and matches by capturing match status (Home/Away) and goals scored dynamically.
 
-## 🚀 Portable Architecture (How to Run)
+## Portable Architecture (How to Run)
 The project is built with a dynamic **Relative Path** structure. There is no need to pre-download any database file. 
 
 When you clone the repository and run `2023-2024 TSL statistic.ipynb`:
