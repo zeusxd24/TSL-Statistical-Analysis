@@ -28,7 +28,10 @@ This project operates as a fully automated, standalone data pipeline. It elimina
 
 ### Prerequisites
 Ensure you have Python 3.x installed along with the required libraries for web scraping, data manipulation, and visualization:
-```bash pip install pandas numpy beautifulsoup4 requests seaborn matplotlib adjustText
+
+```bash
+pip install pandas numpy beautifulsoup4 requests seaborn matplotlib adjustText
+```
 
 When you clone the repository and run `2023-2024 TSL statistic.ipynb`:
 1. It automatically fetches live data via Web Scraping from the official TFF site.
