@@ -22,6 +22,14 @@ Since the relationship between Teams and Matches is inherently **Many-to-Many**,
 ## Portable Architecture (How to Run)
 The project is built with a dynamic **Relative Path** structure. There is no need to pre-download any database file. 
 
+## How to Run & Pipeline Workflow
+
+This project operates as a fully automated, standalone data pipeline. It eliminates data-dependency by fetching live statistics and initializing the RDBMS structure on the fly.
+
+### Prerequisites
+Ensure you have Python 3.x installed along with the required libraries for web scraping, data manipulation, and visualization:
+```bash pip install pandas numpy beautifulsoup4 requests seaborn matplotlib adjustText'''
+
 When you clone the repository and run `2023-2024 TSL statistic.ipynb`:
 1. It automatically fetches live data via Web Scraping from the official TFF site.
 2. It initializes a localized SQLite database (`tsl_analysis.db`) on the fly.
